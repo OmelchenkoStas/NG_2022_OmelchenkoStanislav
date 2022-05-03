@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    float MotherBoardPrice, VideocardPrice, CPUprice, Discount, Price, sum, disc;
+    float MotherBoardPrice, VideocardPrice, CPUprice, Discount;
     cout << "Motherboard price: ";
     cin >> MotherBoardPrice;
     cout << "Videocard Price: ";
@@ -14,8 +14,7 @@ int main()
     cin >> CPUprice;
     cout << "Discount: ";
     cin >> Discount;
-    sum = MotherBoardPrice + VideocardPrice + CPUprice;
-    cout << "Price: " << sum - ((sum / 100) * Discount) << endl;
+    cout << "Price: " << ((MotherBoardPrice + VideocardPrice + CPUprice) - ((MotherBoardPrice + VideocardPrice + CPUprice) / 100) * Discount) << endl;
 
     return 0;
 }
